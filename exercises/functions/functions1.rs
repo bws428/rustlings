@@ -8,3 +8,7 @@
 fn main() {
     call_me();
 }
+
+call_me() {
+    println!("Hey there!");
+}
