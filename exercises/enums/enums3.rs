@@ -42,7 +42,9 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
-        // Use a `match expression` to process the different message variants
+        // Use `match` control flow construct to process the different
+        // message variants.
+        // https://doc.rust-lang.org/book/ch06-02-match.html
         match message {
             Message::ChangeColor(r, g, b) => self.change_color((r, g, b)),
             Message::Echo(s) => self.echo(s),
